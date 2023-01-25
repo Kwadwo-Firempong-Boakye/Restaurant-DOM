@@ -1,0 +1,95 @@
+:root {
+	font-size: 16px;
+	font-family: VarelaRound, sans-serif;
+	background: #fff;
+	--main-orange: #ff7629;
+	--dark-grey-black: rgb(25, 25, 25);
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+	font-family: "VarelaRound";
+	src: url(./VarelaRound-Regular.ttf);
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	height: 6rem;
+	border-bottom: 2px solid #f2f2f2;
+	margin-bottom: 1.5rem;
+	padding: 0 15%;
+}
+
+.logo-area,
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1.5rem;
+	align-items: center;
+	transition: all 0.3s ease-in-out;
+}
+
+.logo-area img {
+	position: relative;
+	bottom: 1.7rem;
+	overflow: hidden;
+	transform: scale(1.25);
+}
+
+.logo-area p {
+	font-weight: bold;
+	font-size: 1.7rem;
+	letter-spacing: 0.5px;
+	transition: all 0.5s ease-in;
+}
+
+.logo-area p:hover {
+	color: var(--main-orange);
+}
+
+.menu p {
+	font-size: 1.2rem;
+	transition: all 0.2s ease-in-out;
+}
+
+.menu p:hover {
+	color: #ff7629;
+	transform: translateY(-1px);
+}
+
+.order-button,
+.git-button {
+	border-radius: 1rem;
+	border: 1px solid #f2f2f2;
+	padding: 0.75rem 1.2rem;
+	color: #fff;
+	font-size: 1.2rem;
+	font-family: VarelaRound;
+	transition: all 0.3s ease-in-out;
+}
+
+.order-button {
+	background-color: var(--main-orange);
+}
+
+.order-button:hover,
+.git-button:hover {
+	transform: scale(1.05);
+	background-color: #ffdb29;
+	color: var(--dark-grey-black);
+}
+
+.git-button {
+	background-color: var(--dark-grey-black);
+}
+
+main {
+	background: #fdfdfd;
+}
