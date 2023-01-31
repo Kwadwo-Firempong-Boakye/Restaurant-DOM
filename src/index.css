@@ -308,7 +308,7 @@ main {
 	}
 
 	.hero-images img {
-		right: 0;
+		right: 0 !important;
 		width: 100%;
 		min-height: fit-content;
 	}
