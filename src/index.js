@@ -14,11 +14,17 @@ const createHomePage = () => {
 	createNav();
 	createHero();
 	rePopulatePage();
+	setTimeout(() => {
+		transitionIn();
+	}, 10);
 };
 
 const createLandingPage = () => {
 	createHero();
 	rePopulatePage();
+	setTimeout(() => {
+		transitionIn();
+	}, 10);
 };
 
 const createAboutPage = () => {
@@ -27,6 +33,9 @@ const createAboutPage = () => {
 	createAboutSubjectOne();
 	createAboutSubjectTwo();
 	rePopulatePage();
+	setTimeout(() => {
+		transitionIn();
+	}, 10);
 };
 
 const rePopulatePage = () => {
@@ -60,7 +69,6 @@ const rePopulatePage = () => {
 				} else if (item.innerText == "Home") {
 					createLandingPage();
 				}
-				transitionIn();
 			}, 1300);
 		});
 	});
