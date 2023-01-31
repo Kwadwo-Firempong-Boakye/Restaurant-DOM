@@ -63,6 +63,7 @@ const createNav = () => {
 
 	// Build Mobile Menu
 	newMenu.append(newHomeMenu, newAboutMenu, newMenuMenu, newContactMenu);
+	newMenu.style.top = "-500px";
 	newHomeMenu.innerText = "Home";
 	newHomeMenu.setAttribute("id", "mobile-home-link");
 	newAboutMenu.innerText = "About";
@@ -81,16 +82,18 @@ const createNav = () => {
 	});
 
 	const toggleMobileMenu = (e) => {
-		if (newMenu.style.top == "-500px") {
-			newMenu.style.top = "96px";
+		let hamburger = document.querySelector(".new-menu");
+		if (hamburger.style.top == "-500px") {
+			hamburger.style.top = "96px";
 		} else {
-			newMenu.style.top = "-500px";
+			hamburger.style.top = "-500px";
 		}
 	};
 
 	const hideMobileMenu = () => {
-		if (newMenu.style.top != "-500px") {
-			newMenu.style.top = "-500px";
+		let hamburger = document.querySelector(".new-menu");
+		if (hamburger.style.top != "-500px") {
+			hamburger.style.top = "-500px";
 		}
 	};
 

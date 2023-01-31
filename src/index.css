@@ -151,8 +151,8 @@ main {
 	left: 60vw;
 	right: 0;
 	z-index: 1;
-	background: #ffa26c;
-	opacity: 1;
+	background: #ff7629;
+	/* opacity: 1;
 	background-image: radial-gradient(circle at center center, #ffdb29, #ffac7c),
 		repeating-radial-gradient(
 			circle at center center,
@@ -162,7 +162,7 @@ main {
 			transparent 96px,
 			transparent 64px
 		);
-	background-blend-mode: multiply;
+	background-blend-mode: multiply; */
 }
 
 .hero-area {

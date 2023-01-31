@@ -38,7 +38,7 @@ const createHero = () => {
 	//Build HeroText Area
 	heroHeading.innerHTML = "The juiciest cheeseburgers <span>in Accra</span>";
 	heroSubtext.innerText =
-		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum aliquamminima sit enim cumque ab, praesentium at officia tempora aspernatur natus!";
+		"Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique cum aliquamminima sit enim cumque ab, praesentium ati officia tempora aspernatur natus!";
 	orderNowButton.innerText = "Order Now";
 	seeMenuButton.innerText = "See Menu";
 
