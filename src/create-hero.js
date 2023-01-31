@@ -17,6 +17,7 @@ const createHero = () => {
 	//Append important containers elements to DOM
 	contentContainer.append(mainContainer);
 	mainContainer.append(mainBackground, heroArea);
+	mainContainer.setAttribute("id", "page-container");
 	heroArea.append(heroText, heroImageArea);
 	heroText.append(heroHeading, heroSubtext, heroButtonArea);
 	heroImageArea.append(heroImage);
@@ -43,6 +44,9 @@ const createHero = () => {
 	//Build HeroImage Area
 	heroImage.setAttribute("src", heroImageAddress);
 	heroImage.setAttribute("alt", "picture of juicy burger");
+
+	//Set Page Name
+	const pageName = "Home";
 };
 
 export default createHero;

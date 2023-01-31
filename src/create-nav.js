@@ -7,6 +7,7 @@ const createNav = () => {
 	const logoImage = document.createElement("img");
 	const logoAddress = "/src/cropanimburg.gif";
 	const logoName = document.createElement("p");
+	const homeMenu = document.createElement("p");
 	const aboutMenu = document.createElement("p");
 	const menuMenu = document.createElement("p");
 	const contactMenu = document.createElement("p");
@@ -36,10 +37,22 @@ const createNav = () => {
 	logoName.innerText = "Lick-Ur-Lips";
 
 	// Build Menu
-	navMenu.append(aboutMenu, menuMenu, contactMenu, orderButton, gitButton);
+	navMenu.append(
+		homeMenu,
+		aboutMenu,
+		menuMenu,
+		contactMenu,
+		orderButton,
+		gitButton
+	);
+	homeMenu.innerText = "Home";
+	homeMenu.setAttribute("id", "home-link");
 	aboutMenu.innerText = "About";
+	aboutMenu.setAttribute("id", "about-link");
 	menuMenu.innerText = "Menu";
+	menuMenu.setAttribute("id", "menu-link");
 	contactMenu.innerText = "Contact";
+	contactMenu.setAttribute("id", "contact-link");
 	orderButton.innerText = "Order Now";
 	orderButton.classList.add("order-button");
 	gitButton.innerText = "See Code";
@@ -49,9 +62,13 @@ const createNav = () => {
 	// Build Mobile Menu
 	newMenu.append(newHomeMenu, newAboutMenu, newMenuMenu, newContactMenu);
 	newHomeMenu.innerText = "Home";
+	newHomeMenu.setAttribute("id", "mobile-home-link");
 	newAboutMenu.innerText = "About";
+	newAboutMenu.setAttribute("id", "mobile-about-link");
 	newMenuMenu.innerText = "Menu";
+	newMenuMenu.setAttribute("id", "mobile-menu-link");
 	newContactMenu.innerText = "Contact";
+	newContactMenu.setAttribute("id", "mobile-contact-link");
 
 	//Build Mobile Menu Logic
 	const hamburger = document.querySelector(".hamburger");
