@@ -1,3 +1,5 @@
+import pic1 from "./ahamburger.jpg";
+import pic3 from "./drool-burger.jpg";
 const createAboutHero = () => {
 	//Create all necessary elements
 	const contentContainer = document.querySelector("#content");
@@ -9,7 +11,7 @@ const createAboutHero = () => {
 	const aboutParagraph = document.createElement("p");
 	const aboutHeroImageContainer = document.createElement("div");
 	const aboutHeroImage = document.createElement("img");
-	const aboutHeroImageAddress = "/src/drool-burger.jpg";
+	const aboutHeroImageAddress = pic3;
 
 	//Append important containers elements to DOM
 	contentContainer.append(aboutContainer);
@@ -98,7 +100,7 @@ const createAboutSubjectOne = () => {
 	const aboutParagraph = document.createElement("p");
 	const aboutImageContainer = document.createElement("div");
 	const aboutImage = document.createElement("img");
-	const aboutImageAddress = "/src/ahamburger.jpg";
+	const aboutImageAddress = pic1;
 	const divider = document.createElement("div");
 
 	//Append base elements to DOM

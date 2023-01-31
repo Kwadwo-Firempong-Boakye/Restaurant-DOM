@@ -1,3 +1,4 @@
+import pic4 from "./hero-burger.jpeg"
 const createHero = () => {
 	//Create all necessary elements
 	const contentContainer = document.querySelector("#content");
@@ -12,7 +13,7 @@ const createHero = () => {
 	const seeMenuButton = document.createElement("button");
 	const heroImageArea = document.createElement("section");
 	const heroImage = document.createElement("img");
-	const heroImageAddress = "/src/hero-burger.jpeg";
+	const heroImageAddress = pic4;
 
 	//Append important containers elements to DOM
 	contentContainer.append(mainContainer);

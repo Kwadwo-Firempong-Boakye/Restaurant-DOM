@@ -1,3 +1,5 @@
+import pic2 from "./cropanimburg.gif";
+
 const createNav = () => {
 	//Create all necessary elements
 	const contentContainer = document.querySelector("#content");
@@ -5,7 +7,7 @@ const createNav = () => {
 	const logoArea = document.createElement("section");
 	const navMenu = document.createElement("section");
 	const logoImage = document.createElement("img");
-	const logoAddress = "/src/cropanimburg.gif";
+	const logoAddress = pic2;
 	const logoName = document.createElement("p");
 	const homeMenu = document.createElement("p");
 	const aboutMenu = document.createElement("p");
