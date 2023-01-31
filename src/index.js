@@ -1,5 +1,6 @@
 import "./index.css";
 import "./about-page.css";
+import "./menu-page.css";
 import createNav from "./create-nav";
 import createHero from "./create-hero";
 import {
@@ -8,6 +9,7 @@ import {
 	createAboutSubjectOne,
 	createAboutSubjectTwo,
 } from "./create-about";
+import createMenu from "./create-menu";
 import {
 	transitionOut,
 	transitionIn,
@@ -47,6 +49,14 @@ const createAboutPage = () => {
 	}, 10);
 };
 
+const createMenuPage = () => {
+	createMenu();
+	rePopulatePage();
+	setTimeout(() => {
+		transitionIn();
+	}, 10);
+};
+
 const rePopulatePage = () => {
 	const contentContainer = document.getElementById("content");
 	const pageContainer = document.getElementById("page-container");
@@ -77,8 +87,10 @@ const rePopulatePage = () => {
 					createAboutPage();
 				} else if (item.innerText == "Home") {
 					createLandingPage();
+				} else if (item.innerText == "Menu") {
+					createMenuPage();
 				}
-			}, 1300);
+			}, 1000);
 		});
 	});
 };
