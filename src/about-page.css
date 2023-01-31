@@ -1,0 +1,160 @@
+.about-page {
+	display: block;
+	opacity: 1;
+	transition: all 1.3s ease-in-out;
+}
+
+.about-hero {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: auto;
+	padding: 2rem;
+	max-width: 1280px;
+}
+
+.about-hero-text,
+.about-text-area {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	margin: 0.5rem;
+	padding-left: 1rem;
+	gap: 1rem;
+}
+
+.about-hero-text h1 {
+	font-size: clamp(3rem, 4.5rem, 5.5rem);
+	margin: 0;
+}
+
+.about-hero-text p {
+	font-size: 1rem;
+	max-width: 85%;
+	text-align: justify;
+}
+
+#mini-heading {
+	color: var(--main-orange);
+	font-size: 1.3rem;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.about-hero-image,
+.about-image-area {
+	max-width: 50%;
+	margin: 0.5rem;
+	padding-left: 1rem;
+}
+
+.about-hero-image img {
+	object-fit: cover;
+	max-width: 100%;
+	border-radius: 50%;
+	outline: 0.5rem dotted #ff7629;
+	border: 1.5rem solid #ffffff;
+	box-sizing: border-box;
+}
+
+.about-stats {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	max-width: 1280px;
+	margin: auto;
+	padding: 2rem;
+}
+
+.about-stats h3 {
+	font-size: clamp(2rem, 3.5rem, 3.75rem);
+	margin: 0;
+}
+
+.about-stats p {
+	margin: 0.5rem 0;
+	font-size: 1.2rem;
+}
+
+.about-stats span {
+	color: var(--main-orange);
+}
+
+.about-subject {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1280px;
+	margin: auto;
+	margin-top: 5rem;
+}
+
+.about-text-area p {
+	margin: 0;
+	text-align: justify;
+	max-width: 90%;
+}
+
+.about-text-area h2 {
+	font-size: clamp(2rem, 2.5rem, 3rem);
+	margin: 0;
+	max-width: 90%;
+}
+
+.about-image-area img {
+	object-fit: cover;
+	max-width: 100%;
+	max-height: 500px;
+}
+
+.divider {
+	height: 2px;
+	max-width: 1280px;
+	background: rgb(231, 231, 231);
+	margin: auto;
+	margin-top: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+	.about-hero {
+		flex-direction: column;
+		max-width: 100vw;
+		align-items: center;
+	}
+
+	.about-hero-text {
+		width: 90vw;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		padding-left: 0;
+	}
+
+	.about-hero-image {
+		max-width: 90vw;
+	}
+
+	.about-stats {
+		justify-items: center;
+		text-align: center;
+		gap: 3rem;
+	}
+
+	.about-subject {
+		flex-direction: column;
+		align-items: flex-start;
+		max-width: 100vw;
+		margin-top: 2rem;
+	}
+
+	.about-text-area {
+		width: 95vw;
+	}
+
+	.about-image-area {
+		max-width: 90vw;
+	}
+
+	.about-image-area img {
+		max-height: 100%;
+	}
+}
