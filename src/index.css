@@ -1,3 +1,4 @@
+/* @import "./about-page.css"; */
 :root {
 	font-size: 16px;
 	font-family: VarelaRound, sans-serif;
@@ -140,6 +141,8 @@ main {
 	width: 100vw;
 	height: 100vh;
 	position: relative;
+	opacity: 1;
+	transition: all 1.3s ease-in-out;
 }
 
 .main-background {
@@ -286,7 +289,6 @@ main {
 	.hero-button-area {
 		max-width: 85%;
 	}
-
 
 	.main-background {
 		left: 0;
