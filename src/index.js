@@ -8,7 +8,12 @@ import {
 	createAboutSubjectOne,
 	createAboutSubjectTwo,
 } from "./create-about";
-import { transitionOut, transitionIn } from "./transition";
+import {
+	transitionOut,
+	transitionIn,
+	HeroImageSlideIn,
+	HeroTextSlideIn,
+} from "./transition";
 
 const createHomePage = () => {
 	createNav();
@@ -16,6 +21,8 @@ const createHomePage = () => {
 	rePopulatePage();
 	setTimeout(() => {
 		transitionIn();
+		HeroImageSlideIn();
+		HeroTextSlideIn();
 	}, 10);
 };
 
@@ -24,6 +31,8 @@ const createLandingPage = () => {
 	rePopulatePage();
 	setTimeout(() => {
 		transitionIn();
+		HeroImageSlideIn();
+		HeroTextSlideIn();
 	}, 10);
 };
 
