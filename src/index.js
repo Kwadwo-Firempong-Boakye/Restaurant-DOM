@@ -57,6 +57,15 @@ const createMenuPage = () => {
 	}, 10);
 };
 
+const temp = () => {
+	createNav();
+	createMenu();
+	rePopulatePage();
+	setTimeout(() => {
+		transitionIn();
+	}, 10);
+};
+
 const rePopulatePage = () => {
 	const contentContainer = document.getElementById("content");
 	const pageContainer = document.getElementById("page-container");
