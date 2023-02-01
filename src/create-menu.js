@@ -26,12 +26,15 @@ const createMenu = () => {
 
 	const menuImageAreaContainer = document.createElement("div");
 
+	const divider = document.createElement("div");
+
 	//Append important containers elements to DOM
 	contentContainer.append(menuContainer);
 	menuContainer.append(
 		heroTextContainer,
 		menuGroupButtonContainer,
-		menuImageAreaContainer
+		menuImageAreaContainer,
+		divider
 	);
 	heroTextContainer.append(heroTextHeading, heroTextParagraph);
 	menuGroupButtonContainer.append(
@@ -45,9 +48,13 @@ const createMenu = () => {
 	//Build classes and ids
 	menuContainer.setAttribute("id", "page-container");
 	menuContainer.classList.add("menu-page-container");
+	heroTextContainer.classList.add("hero-text-container");
+	menuGroupButtonContainer.classList.add("group-button-container");
+	menuImageAreaContainer.classList.add("image-area-container");
+	divider.classList.add("divider");
 
 	//Build content of containers
-	heroTextHeading.innerText = "Exploding Flavors!";
+	heroTextHeading.innerText = "Flavorful Fireworks";
 	heroTextParagraph.innerText =
 		"Lorem ipsum dolor sit amet consectetur adipiscing elit ugue quam diam vitae velit bibendum elementum dolor.";
 	menuGroupButton1.innerText = "All";
@@ -75,6 +82,12 @@ const createMenu = () => {
 			const menuImage = document.createElement("img");
 			const menuImageCaption = document.createElement("h3");
 			const menuImageSubCaption = document.createElement("P");
+
+			menuImageGroupContainer.classList.add("image-group-container");
+			menuImagePrice.classList.add("menu-image-price");
+			menuImage.classList.add("menu-image");
+			menuImageCaption.classList.add("menu-image-caption");
+			menuImageSubCaption.classList.add("menu-image-sub-caption");
 
 			menuImageAreaContainer.append(menuImageGroupContainer);
 			menuImageGroupContainer.append(
